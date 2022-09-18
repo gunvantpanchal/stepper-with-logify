@@ -10,11 +10,11 @@ const FormOne = () => {
         const regex = /^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/;
 
         if (updateContext.userName == null) {
-            console.log('Please enter your Name')
+            alert('Please enter your Name')
         } else if (updateContext.userMail == null || regex.test(updateContext.userMail) !== true) {
-            console.log('Please enter your email correctly')
+            alert('Please enter your email correctly')
         } else if (updateContext.userPhone == null || updateContext.userPhone.length !== 10 ) {
-            console.log('Please enter your phone number correctly')
+            alert('Please enter your phone number correctly')
         } else (updateContext.setStep(updateContext.currentPage + 1))
     };
 

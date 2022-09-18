@@ -62,7 +62,7 @@ const StepForm = ({userName, onLogout}) => {
           />
           <div className="user_div">
             {userName}
-            <button onClick={onLogout}>Logout</button>
+            <button onClick={onLogout} className="logout_btn">Logout</button>
           </div>
         </div>
         <div className="body">
